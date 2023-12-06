@@ -1,6 +1,14 @@
 # Udacity_Ethereum_DAPP_SCM_Project
 This project is from the Udacity Blockchain Developer Nanodegree - Project: Ethereum Dapp for Tracking Items through Supply Chain
 
+### Program Versions
+1. Truffle v5.11.5 (core: 5.11.5)
+2. Ganache v7.9.1
+3. Solidity - 0.8.0 (solc-js)
+4. Node v20.9.0
+5. Web3.js v1.10.0
+
+### Contract Information
 1. Contract Address on the Goerli Network: `0x18b9051f96BC56FCb9F6F1D1FC6Be86eaCCdB276`
 2. Transaction Hash that deployed the contract on Goerli: `0x516af3d38ee1163e698870df1b2ab564b4db6dae3ff822188985313f44f81b70`
 
