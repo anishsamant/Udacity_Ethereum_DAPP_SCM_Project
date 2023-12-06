@@ -49,6 +49,8 @@ App = {
                 // assigning same address to owner and farmer roles for simplicity of testing
                 App.ownerID = result[0];
                 App.originFarmerID = result[0];
+                $("#ownerID").val(App.ownerID);
+                $("#originFarmerID").val(App.originFarmerID);
                 window.web3 = new Web3(App.web3Provider);
                 App.initSupplyChain();
             })
@@ -97,8 +99,6 @@ App = {
     },
 
     fillFormBufferTwo: function (result) {
-        $("#sku").val(result.itemSKU);
-        $("#upc").val(result.itemUPC);
         $("#productNotes").val(result.productNotes);
         $("#productPrice").val(result.productPrice);
         $("#distributorID").val(result.distributorID);
@@ -308,6 +308,10 @@ App = {
           return instance.fetchItemBufferOne(App.upc);
         }).then(function(result) {
           $("#ftc-item").text(result);
+          if (result.ownerID == App.emptyAddress) {
+            alert("Nothing harvested yet. Harvest an item first!!!");
+            return;
+          }
           App.fillFormBufferOne(result);
           console.log('fetchItemBufferOne', result);
 
