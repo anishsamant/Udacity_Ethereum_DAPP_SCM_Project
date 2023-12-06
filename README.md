@@ -11,14 +11,16 @@ This project is from the Udacity Blockchain Developer Nanodegree - Project: Ethe
 3. From the  project parent directory install dependencies: <br>
 `$ npm install`
 
-4. Launch ganache GUI
+4. Launch ganache GUI <br>
+![ganache_gui](https://github.com/anishsamant/Udacity_Ethereum_DAPP_SCM_Project/assets/21247634/271fcc13-b4a5-44b1-b498-8d145632500f)
 
 5. Compile and migrate contract <br>
 `$ truffle compile` <br>
 `$ truffle migrate --reset` <br>
 
 6. Test the contract <br>
-`$ truffle test`
+`$ truffle test` <br>
+![truffle_test](https://github.com/anishsamant/Udacity_Ethereum_DAPP_SCM_Project/assets/21247634/4b31cb19-c675-4072-ae7e-b3a09cdb3eea)
 
 7. In a separate terminal window, launch the DApp <br>
 `$ npm run dev`
