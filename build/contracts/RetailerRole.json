@@ -49,7 +49,8 @@
         }
       ],
       "stateMutability": "view",
-      "type": "function"
+      "type": "function",
+      "constant": true
     },
     {
       "inputs": [
@@ -1996,10 +1997,37 @@
   },
   "networks": {
     "5": {
-      "events": {},
+      "events": {
+        "0x71ae26cad02663e3d92efd6ec56031a80d74a20c0ab4183faa8bf262261c9baa": {
+          "anonymous": false,
+          "inputs": [
+            {
+              "indexed": true,
+              "internalType": "address",
+              "name": "account",
+              "type": "address"
+            }
+          ],
+          "name": "RetailerAdded",
+          "type": "event"
+        },
+        "0xdb7176e79cffef81cb01767dd0447a0b24bb72ca9778d4b245581086b2a7e6db": {
+          "anonymous": false,
+          "inputs": [
+            {
+              "indexed": true,
+              "internalType": "address",
+              "name": "account",
+              "type": "address"
+            }
+          ],
+          "name": "RetailerRemoved",
+          "type": "event"
+        }
+      },
       "links": {},
-      "address": "0x2C9A73b6a871f85e0DCD0a313DB47c32dca438ba",
-      "transactionHash": "0x911298bc180d34cfca501022c588b3bbe0809f4f74cef18c8c3fb89af0c4bd54"
+      "address": "0x1E4F6DDa59c471465D2Ff0eA9ef5105E6B1e0367",
+      "transactionHash": "0x9be13f43fda461f5a47c83e9b21b2648468b54b02b1a6ed76afe7ff51de82a14"
     },
     "5777": {
       "events": {
@@ -2036,7 +2064,8 @@
     }
   },
   "schemaVersion": "3.4.16",
-  "updatedAt": "2023-12-05T19:51:24.769Z",
+  "updatedAt": "2023-12-05T22:41:48.410Z",
+  "networkType": "ethereum",
   "devdoc": {
     "kind": "dev",
     "methods": {},

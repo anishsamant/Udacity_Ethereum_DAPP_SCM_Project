@@ -49,7 +49,8 @@
         }
       ],
       "stateMutability": "view",
-      "type": "function"
+      "type": "function",
+      "constant": true
     },
     {
       "inputs": [
@@ -1996,10 +1997,37 @@
   },
   "networks": {
     "5": {
-      "events": {},
+      "events": {
+        "0x28b26e7a3d20aedbc5f8f2ebf7da671c0491723a2b78f47a097b0e46dee07142": {
+          "anonymous": false,
+          "inputs": [
+            {
+              "indexed": true,
+              "internalType": "address",
+              "name": "account",
+              "type": "address"
+            }
+          ],
+          "name": "ConsumerAdded",
+          "type": "event"
+        },
+        "0xe3f5ed5f263f1f01764a96edfc7d025f511ec5f7d180e8816908b78bcf74f098": {
+          "anonymous": false,
+          "inputs": [
+            {
+              "indexed": true,
+              "internalType": "address",
+              "name": "account",
+              "type": "address"
+            }
+          ],
+          "name": "ConsumerRemoved",
+          "type": "event"
+        }
+      },
       "links": {},
-      "address": "0x1C2Be55c01Aa6524C502da5D0552948155E106d0",
-      "transactionHash": "0xbe52d04bf12be53489184b153a7f1f337e4a62191431b2d4b34171d031bfdd9d"
+      "address": "0x1630ECAE971919B17d33DC53BE5b4eA9352629de",
+      "transactionHash": "0x764699ffc831701b221ec3d9e06cd6fb516e249754c9dffa406011e949fcc8a8"
     },
     "5777": {
       "events": {
@@ -2036,7 +2064,8 @@
     }
   },
   "schemaVersion": "3.4.16",
-  "updatedAt": "2023-12-05T19:51:24.749Z",
+  "updatedAt": "2023-12-05T22:41:48.418Z",
+  "networkType": "ethereum",
   "devdoc": {
     "kind": "dev",
     "methods": {},
