@@ -183,7 +183,7 @@ contract('SupplyChain', function(accounts) {
     })    
 
     // 6th Test
-    it("Testing smart contract function shipItem() that allows a distributor to ship coffee", async() => {
+    it("Testing smart contract function shipItem() that allows a farmer to ship coffee", async() => {
         
         // Declare and Initialize a variable for event
         var eventEmitted = false;
@@ -194,7 +194,7 @@ contract('SupplyChain', function(accounts) {
         });
 
         // Mark an item as Shipped by calling function shipItem()
-        await supplyChain.shipItem(upc, {from: distributorID});
+        await supplyChain.shipItem(upc, {from: originFarmerID});
 
         // Retrieve the just now saved item from blockchain by calling function fetchItem()
         const resultBufferOne = await supplyChain.fetchItemBufferOne(upc);
